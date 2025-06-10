@@ -1,3 +1,8 @@
     .titulo{
         color: green;
+        text-align: center;
     }   
+    hr{background-color: green; height: 3px;} 
+    p{text-align: center; font-size: 160% ;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    
+    
