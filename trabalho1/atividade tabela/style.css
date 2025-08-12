@@ -1,0 +1,10 @@
+table{border-width: 3px;
+    border-color: rgb(255, 0, 0);
+    border-style: groove;}
+th{
+    text-align: center;}
+td{
+    text-align: center;}
+h1{
+    text-align: center;}
+tr{   }
