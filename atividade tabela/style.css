@@ -1,0 +1,55 @@
+table{border-width: 1px;
+    border-color: rgb(96, 84, 255);
+    border-style: groove;
+    border-collapse: collapse;
+    text-align: center;
+    width: 70%;
+    max-width: 800px;
+    transition: transform 0.2s ease-in-out;
+}
+th{
+    text-align: center;
+    border-color: rgb(96, 84, 255);
+    border-style: groove;
+}
+td{
+    text-align: center;
+    border-color: rgb(96, 84, 255);
+    border-style: groove;
+}
+h1{
+    text-align: center;
+    color: rgb(129, 0, 141);
+      font-family: "Rubik", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+caption{ 
+    color: rgb(129, 0, 141);
+      font-family: "Rubik", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+}
+body{
+    background-color: rgb(255, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+thead{
+    background-color: #444;
+    color: white;
+}
+tbody tr:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: crimson;
+}
+tbody tr:nth-child(odd) {
+    background-color: aquamarine;
+}
+
+
