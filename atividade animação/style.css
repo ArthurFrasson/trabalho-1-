@@ -1,0 +1,26 @@
+    .título{
+        font-size: xx-large;
+        color: red;
+        text-align: center;
+        transition: ease-in-out 0,5s;
+       }
+
+    button {
+        background: blue;
+        transition: 0.5s ease-in-out;
+        height: 100px;
+        width: 100px;
+}
+    button:hover { background-color: red }
+    .quadrado{
+        height: 100px;
+        width: 100px;
+        background-color: aqua; 
+        animation: 2s infinite alternate;
+    }
+ 
+    
+
+
+
+
