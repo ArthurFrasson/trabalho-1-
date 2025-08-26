@@ -1,55 +1,60 @@
-table{border-width: 1px;
-    border-color: rgb(96, 84, 255);
-    border-style: groove;
-    border-collapse: collapse;
-    text-align: center;
-    width: 70%;
-    max-width: 800px;
-    transition: transform 0.2s ease-in-out;
-}
-th{
-    text-align: center;
-    border-color: rgb(96, 84, 255);
-    border-style: groove;
-}
-td{
-    text-align: center;
-    border-color: rgb(96, 84, 255);
-    border-style: groove;
-}
-h1{
-    text-align: center;
-    color: rgb(129, 0, 141);
-      font-family: "Rubik", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-}
-caption{ 
-    color: rgb(129, 0, 141);
-      font-family: "Rubik", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-}
 body{
-    background-color: rgb(255, 190, 190);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-thead{
-    background-color: #444;
-    color: white;
+.fla{
+    font-size: xx-large;
+    color: red;
+    text-align: center;
+    animation: pulsar 0.5s infinite ;
 }
-tbody tr:hover {
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: crimson;
+@keyframes pulsar{
+    0% { transform: scale(1);}
+    50% { transform: scale(1,2);}
+    100% {transform: scale(1);}
 }
-tbody tr:nth-child(odd) {
-    background-color: aquamarine;
+button {
+        background: blue;
+        transition: 0.5s ease-in-out;
+        height: 100px;
+        width: 100px;
 }
-
-
+button:hover { 
+    background-color: red 
+}
+.quadrado{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation: quad 2s infinite alternate;
+}
+@keyframes quad{
+    from { transform: translateX(0);}
+    to { transform: translateX(200px);}
+}
+.cir{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    animation: ci 0.5s infinite alternate;
+}
+@keyframes ci{
+    from { transform: translateY(0);}
+    to {transform: translateY(200px);}
+}
+.scr{
+    width: 100px;
+    height: 100px;
+    border: 6px pink solid;
+    border-radius: 50%;
+    border-top: 6px red solid;
+    animation: giro 0.5s infinite;
+    margin-top: 200px;
+}
+@keyframes giro{
+    from { rotate: 0deg;}
+    to {rotate: 360deg;}
+}
