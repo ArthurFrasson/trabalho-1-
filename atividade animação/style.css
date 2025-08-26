@@ -1,26 +1,60 @@
-    .título{
-        font-size: xx-large;
-        color: red;
-        text-align: center;
-        transition: ease-in-out 0,5s;
-       }
-
-    button {
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fla{
+    font-size: xx-large;
+    color: red;
+    text-align: center;
+    animation: pulsar 0.5s infinite ;
+}
+@keyframes pulsar{
+    0% { transform: scale(1);}
+    50% { transform: scale(1,2);}
+    100% {transform: scale(1);}
+}
+button {
         background: blue;
         transition: 0.5s ease-in-out;
         height: 100px;
         width: 100px;
 }
-    button:hover { background-color: red }
-    .quadrado{
-        height: 100px;
-        width: 100px;
-        background-color: aqua; 
-        animation: 2s infinite alternate;
-    }
- 
-    
-
-
-
-
+button:hover { 
+    background-color: red 
+}
+.quadrado{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation: quad 2s infinite alternate;
+}
+@keyframes quad{
+    from { transform: translateX(0);}
+    to { transform: translateX(200px);}
+}
+.cir{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    animation: ci 0.5s infinite alternate;
+}
+@keyframes ci{
+    from { transform: translateY(0);}
+    to {transform: translateY(200px);}
+}
+.scr{
+    width: 100px;
+    height: 100px;
+    border: 6px pink solid;
+    border-radius: 50%;
+    border-top: 6px red solid;
+    animation: giro 0.5s infinite;
+    margin-top: 200px;
+}
+@keyframes giro{
+    from { rotate: 0deg;}
+    to {rotate: 360deg;}
+}
